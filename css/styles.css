@@ -19,6 +19,7 @@ body{
     border-radius: 15px;
     max-width:500px;
     overflow:hidden;
+    margin-top:20px;
      
 }
 
@@ -65,3 +66,20 @@ button:active{
     background-color:hsl(35, 100%, 75%);
 }
 
+/* Responsive styles */
+@media (max-width: 600px) { /* Adjust breakpoint as needed */
+    #calculator {
+        max-width: 100%;
+    }
+
+    #keys {
+        grid-template-columns: repeat(4, 1fr);
+        gap:5px;
+        padding:10px;
+
+    }
+    button{
+        width:80px;
+        height:80px;
+    }
+}
